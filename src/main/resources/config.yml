@@ -1,8 +1,6 @@
-CustomCommand: "/ban ¨{player}"
+CustomCommand: "/ban {player} Using blocked commands"
 
 Commands:
-  - "/dc"
-  - "/deluxecombat"
   - "//sphere"
   - "//br"
   - "//brush"
@@ -14,15 +12,6 @@ Commands:
   - "//hsphere"
   - "//fill"
   - "//fillr"
-  - "//br"
-  - "//brush"
-  - "//cyl"
-  - "//set"
-  - "/ept"
-  - "/pt"
-  - "//replace"
-  - "/arcbrush"
-  - "/arch"
   - "/setblock"
   - "/execute"
   - "//generate"
@@ -37,4 +26,4 @@ Commands:
   - "//stack"
 
 Whitelist:
-   - "Android1Troll"
+   - "AdminPlayer"

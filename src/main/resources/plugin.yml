@@ -1,5 +1,13 @@
-name: CommandBlocker
-main: io.github.androidelcalvo.commandblocker.CommandBlocker_Plugin
+name: AdminCommandBlocker
+main: io.github.androidelcalvo.admincommandblocker.AdminCommandBlocker_Plugin
 author: AndroidElCalvo
 version: 1.0
-api-version: 1.18
+api-version: 1.13
+commands:
+  acb:
+    description: AdminCommandBlocker main command
+    usage: /acb reload
+permissions:
+  admincommandblocker.reload:
+    description: Allows reload AdminCommandBlocker config
+    default: op

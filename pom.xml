@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>androidelcalvo</groupId>
-    <artifactId>commandblocker</artifactId>
+    <artifactId>admincommandblocker</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>CommandBlocker</name>
+    <name>AdminCommandBlocker</name>
     <description>Plugin para bloquear comandos con whitelist</description>
 
     <properties>
@@ -34,8 +34,13 @@
             <version>1.18.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>24.0.1</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
-
 
     <build>
         <plugins>
