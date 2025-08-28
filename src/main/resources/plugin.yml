@@ -1,0 +1,5 @@
+name: CommandBlocker
+main: io.github.androidelcalvo.commandblocker.CommandBlocker_Plugin
+author: AndroidElCalvo
+version: 1.0
+api-version: 1.18
