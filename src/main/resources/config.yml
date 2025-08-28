@@ -1,19 +1,38 @@
-CustomCommand: "/ban {player} Using blocked commands"
+# ===========================================================
+# AdminCommandBlocker Configuration
+# Version: 1.1
+# Author: AndroidElCalvo
+# Description: Block specific commands and execute custom actions
+#              for players not whitelisted. 
+# ===========================================================
 
+# -------------------------------------------
+# CustomCommand
+# The command to execute when a blocked command is used.
+# Use {player} to automatically replace with the player's name.
+# Example: "kick {player} Using blocked commands"
+# -------------------------------------------
+CustomCommand: "kick {player} Using blocked commands"
+
+# -------------------------------------------
+# Commands
+# List of commands to block.
+# The plugin will cancel these commands even for OPs.
+# You can add any server commands or plugin commands here.
+# -------------------------------------------
 Commands:
+  - "/fill"
+  - "/setblock"
+  - "/execute"
   - "//sphere"
   - "//br"
   - "//brush"
   - "//cyl"
   - "//set"
-  - "/ept"
-  - "/pt"
   - "//replace"
   - "//hsphere"
   - "//fill"
   - "//fillr"
-  - "/setblock"
-  - "/execute"
   - "//generate"
   - "//spike"
   - "//rock"
@@ -25,5 +44,10 @@ Commands:
   - "//air"
   - "//stack"
 
+# -------------------------------------------
+# Whitelist
+# Players listed here can bypass all blocked commands.
+# Add player names exactly as they appear in-game.
+# -------------------------------------------
 Whitelist:
-   - "AdminPlayer"
+  - "AdminPlayer"
