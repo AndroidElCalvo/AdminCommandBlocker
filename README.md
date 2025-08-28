@@ -1,4 +1,4 @@
-# **AdminCommandBlocker v1.0**
+# **AdminCommandBlocker v1.1**
 
 A **Minecraft security plugin** that blocks specific commands. **Even players with OP or all permissions cannot use the blocked commands** unless they are added to the plugin’s whitelist.
 
@@ -13,7 +13,7 @@ A **Minecraft security plugin** that blocks specific commands. **Even players wi
 ---
 
 ## **Installation**
-1. Place the `AdminCommandBlocker-1.0.jar` file into your server’s `plugins` folder.
+1. Place the `AdminCommandBlocker-1.1.jar` file into your server’s `plugins` folder.
 2. Start or restart your server to generate the default `config.yml`.
 3. Edit `config.yml` to configure blocked commands and whitelist.
 4. Ensure `/acb reload` permission (`admincommandblocker.reload`) is granted to allowed users.
@@ -23,22 +23,21 @@ A **Minecraft security plugin** that blocks specific commands. **Even players wi
 ## **Configuration Example (`config.yml`)**
 
 ```yaml
-CustomCommand: "/ban {player} Using blocked commands"
+CustomCommand: "kick {player} Using blocked commands"
 
 Commands:
+  - "/fill"
+  - "/setblock"
+  - "/execute"
   - "//sphere"
   - "//br"
   - "//brush"
   - "//cyl"
   - "//set"
-  - "/ept"
-  - "/pt"
   - "//replace"
   - "//hsphere"
   - "//fill"
   - "//fillr"
-  - "/setblock"
-  - "/execute"
   - "//generate"
   - "//spike"
   - "//rock"
