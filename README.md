@@ -4,7 +4,7 @@ An minecraft Anti-Grief plugin that blocks a specified command without a permiss
 # Support
 If you have any idea to provide, open a ticket in my **discord or DM me directly**.
 
-Official SkibidiClient Discord server:  
+Support Discord server:  
 [**SkibidiGrief**](https://dsc.gg/SkibidiGrief)
 
 My personal contact: **@Android1Troll** (atrollcalvo823@gmail.com)
