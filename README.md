@@ -23,7 +23,7 @@ A **Minecraft security plugin** that blocks specific commands. **Even players wi
 ## **Configuration Example (`config.yml`)**
 
 ```yaml
-BanCommand: "/ban {player} Using blocked commands"
+CustomCommand: "/ban {player} Using blocked commands"
 
 Commands:
   - "//sphere"
