@@ -7,4 +7,4 @@ If you have any idea to provide, open a ticket in my **discord or DM me directly
 Official SkibidiClient Discord server:  
 [**SkibidiGrief**](https://dsc.gg/SkibidiGrief)
 
-My personal contact: [**@Android1Troll**](atrollcalvo823@gmail.com)
+My personal contact: **@Android1Troll** (atrollcalvo823@gmail.com)
