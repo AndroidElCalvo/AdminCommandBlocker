@@ -1,39 +1,23 @@
 package io.github.androidelcalvo.admincommandblocker.commands;
 
 import io.github.androidelcalvo.admincommandblocker.AdminCommandBlocker_Plugin;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
+import io.github.androidelcalvo.admincommandblocker.Command;
 import org.bukkit.command.CommandSender;
-import org.jetbrains.annotations.NotNull;
 
-public class ReloadCommand implements CommandExecutor {
+public class ReloadCommand extends Command {
 
-    private final AdminCommandBlocker_Plugin plugin;
-
-    public ReloadCommand(AdminCommandBlocker_Plugin plugin) {
-        this.plugin = plugin;
+    public ReloadCommand() {
+        super("reload", "Reloads the plugin config");
     }
 
     @Override
-    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {
-        if (args.length == 0) {
-            sender.sendMessage("§eUsage: /acb reload");
-            return true;
+    public void execute(CommandSender sender, String[] args) {
+        if (!sender.hasPermission("admincommandblocker.reload")) {
+            sender.sendMessage("§cYou don't have permission to do that.");
+            return;
         }
 
-        if (args[0].equalsIgnoreCase("reload")) {
-            if (!sender.hasPermission("admincommandblocker.reload")) {
-                sender.sendMessage("§cYou do not have permission to do that.");
-                return true;
-            }
-
-            plugin.reloadAll();
-
-            sender.sendMessage("§aAdminCommandBlocker configuration reloaded!");
-            return true;
-        }
-
-        sender.sendMessage("§cUnknown subcommand. Usage: /acb reload");
-        return true;
+        AdminCommandBlocker_Plugin.getInstance().reload();
+        sender.sendMessage("§aAdminCommandBlocker config reloaded!");
     }
 }
